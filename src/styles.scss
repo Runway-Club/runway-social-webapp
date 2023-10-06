@@ -12,12 +12,15 @@ $my-primary:(
   100: #c5cae9,
   200: #9fa8da,
   300: #7986cb,
-  400: #5964a7,
+  400: #4259a9,
   500: #1f53d5,
   600: #0d39b2,
   700: #002387,
   800: #001563,
   900: #000739,
+
+
+  
 
   contrast: (
     50: rgba(black, 0.87),
@@ -39,13 +42,14 @@ $my-secondary: (
   100: #c5cae9,
   200: #9fa8da,
   300: #7986cb,
-  400: #5964a7,
+  400: #415aa9,
   500: #3f5aa9,
   600: #2d489c,
   700: #1b3689,
   800: #0f2476,
   900: #031263,
 
+  
   contrast: (
     50: rgba(black, 0.87),
     100: rgba(black, 0.87),
@@ -65,13 +69,14 @@ $my-tertiary: (
   100: #c5cae9,
   200: #9fa8da,
   300: #7986cb,
-  400: #5964a7,
+  400:  #75546f,
   500: #755470,
   600: #634a64,
   700: #513e58,
   800: #4f3a54,
   900: #47364a,
 
+ 
   contrast: (
     50: rgba(black, 0.87),
     100: rgba(black, 0.87),
@@ -96,7 +101,7 @@ $my-error: (
   700: #93000a,
   800: #690005,
   900: #410002,
-
+  
   contrast: (
     50: rgba(black, 0.87),
     100: rgba(black, 0.87),
@@ -125,10 +130,31 @@ $runway-social-theme: mat.define-light-theme(
   )
 );
 
+// 2. Dark Theme
+$runway-social-dark-primary: mat.define-palette($my-primary, 400);
+$runway-social-dark-accent: mat.define-palette($my-secondary, 400);
+$runway-social-dark-warn: mat.define-palette($my-error, 600);
+
+$runway-social-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $runway-social-dark-primary,
+      accent: $runway-social-dark-accent,
+      warn: $runway-social-dark-warn,
+    ),
+  )
+);
+
+
+
 
 @include mat.all-component-themes($runway-social-theme);
 
+.runway-social-dark-theme{
+    @include angular-material-color($runway-social-dark-theme);
+}
+
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
