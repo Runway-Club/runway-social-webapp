@@ -11,7 +11,7 @@ $my-primary:(
   50: #e8eaf6,
   100: #c5cae9,
   200: #9fa8da,
-  300: #7986cb,
+  300: #b5c4ff,
   400: #4259a9,
   500: #1f53d5,
   600: #0d39b2,
@@ -39,15 +39,15 @@ $my-primary:(
 //500
 $my-secondary: (
   50: #e8eaf6,
-  100: #c5cae9,
+  100: #c2c5dd,
   200: #9fa8da,
   300: #7986cb,
   400: #415aa9,
-  500: #3f5aa9,
-  600: #2d489c,
-  700: #1b3689,
-  800: #0f2476,
-  900: #031263,
+  500: #595e72,
+  600: #4b5265,
+  700: #373b4e,
+  800: #232631,
+  900: #0f1114,
 
   
   contrast: (
@@ -66,7 +66,7 @@ $my-secondary: (
 
 $my-tertiary: (
   50: #e8eaf6,
-  100: #c5cae9,
+  100: #e3bada,
   200: #9fa8da,
   300: #7986cb,
   400:  #75546f,
@@ -131,9 +131,9 @@ $runway-social-theme: mat.define-light-theme(
 );
 
 // 2. Dark Theme
-$runway-social-dark-primary: mat.define-palette($my-primary, 400);
-$runway-social-dark-accent: mat.define-palette($my-secondary, 400);
-$runway-social-dark-warn: mat.define-palette($my-error, 600);
+$runway-social-dark-primary: mat.define-palette($my-primary, 300);
+$runway-social-dark-accent: mat.define-palette($my-secondary, 100);
+$runway-social-dark-warn: mat.define-palette($my-error, 200);
 
 $runway-social-dark-theme: mat.define-dark-theme(
   (
