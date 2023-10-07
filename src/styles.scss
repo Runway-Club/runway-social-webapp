@@ -8,16 +8,16 @@
 @include mat.core();
 
 $my-primary:(
-  50: #e8eaf6,
-  100: #c5cae9,
-  200: #9fa8da,
-  300: #7986cb,
-  400: #4259a9,
-  500: #1f53d5,
-  600: #0d39b2,
-  700: #002387,
-  800: #001563,
-  900: #000739,
+  50: #eff0ff,
+  100: #dce1ff,
+  200: #b5c4ff,
+  300: #8fa7ff,
+  400: #668aff,
+  500: #416def,
+  600: #1f53d5,
+  700: #003baf,
+  800: #00287d,
+  900: #00164e,
 
 
   
@@ -38,16 +38,16 @@ $my-primary:(
 
 //500
 $my-secondary: (
-  50: #e8eaf6,
-  100: #c5cae9,
-  200: #9fa8da,
-  300: #7986cb,
-  400: #415aa9,
-  500: #3f5aa9,
-  600: #2d489c,
-  700: #1b3689,
-  800: #0f2476,
-  900: #031263,
+  50: #eff0ff,
+  100: #dee1f9,
+  200: #c2c5dd,
+  300: #a6aac1,
+  400: #8c90a5,
+  500: #72768b,
+  600: #595e72,
+  700: #414659,
+  800: #2b3042,
+  900: #161b2c,
 
   
   contrast: (
@@ -65,16 +65,16 @@ $my-secondary: (
 );
 
 $my-tertiary: (
-  50: #e8eaf6,
-  100: #c5cae9,
-  200: #9fa8da,
-  300: #7986cb,
-  400:  #75546f,
-  500: #755470,
-  600: #634a64,
-  700: #513e58,
-  800: #4f3a54,
-  900: #47364a,
+  50: #ffebf8,
+  100: #ffd7f6,
+  200: #e3bada,
+  300: #c6a0bf,
+  400:  #aa85a3,
+  500: #8f6c89,
+  600: #745470,
+  700: #5b3d57,
+  800: #432740,
+  900: #2c122a,
 
  
   contrast: (
@@ -116,8 +116,8 @@ $my-error: (
   ),
 );
 // 1. Light Theme
-$runway-social-primary: mat.define-palette($my-primary, 500);
-$runway-social-accent: mat.define-palette($my-secondary, 500);
+$runway-social-primary: mat.define-palette($my-primary, 600);
+$runway-social-accent: mat.define-palette($my-secondary, 600);
 $runway-social-warn: mat.define-palette($my-error, 600);
 
 $runway-social-theme: mat.define-light-theme(
@@ -131,9 +131,9 @@ $runway-social-theme: mat.define-light-theme(
 );
 
 // 2. Dark Theme
-$runway-social-dark-primary: mat.define-palette($my-primary, 400);
-$runway-social-dark-accent: mat.define-palette($my-secondary, 400);
-$runway-social-dark-warn: mat.define-palette($my-error, 600);
+$runway-social-dark-primary: mat.define-palette($my-primary, 200);
+$runway-social-dark-accent: mat.define-palette($my-secondary, 200);
+$runway-social-dark-warn: mat.define-palette($my-error, 200);
 
 $runway-social-dark-theme: mat.define-dark-theme(
   (
